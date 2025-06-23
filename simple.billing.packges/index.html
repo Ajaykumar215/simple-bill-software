@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Galaxay Hotel</h1>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="part1">
+                <fieldset id="inputContainerr">
+                    <legend>Personal Information</legend>
+                    Full Name :
+                    <input type="text" id="name"/>
+                    <br>
+                    Your Email :
+                    <input type="text" id="email"/>
+                    <br>
+                    Your Mobile :
+                    <input type="text" id="mobile"/>
+                </fieldset>
+            </div>
+            <div class="part2">
+                <fieldset id="inputContainer">
+                    <legend>Your Orders</legend>
+                    <!-- Smosa (Rs. 10):<input type="text" id="smosa"/>
+                    <br><br>
+                    Kachori (Rs. 12): <input type="text" id="kachori"/>
+                    <br><br>
+                    Vadapav (Rs. 60): <input type="text" id="Vadapav"/>
+                    <br><br> -->
+                </fieldset>
+                <button id="submit">Submit</button> 
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <fieldset>
+            <legend>Your Bill</legend>
+            <p><b>Your Name:</b><span id="name2"></span></p>
+            <p><b>Email:</b><span id="email2"></span></p>
+            <p><b>Mobile:</b><span id="mobile2"></span></p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Menu</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>About</th>
+                    </tr>
+                </thead>
+                <tbody id="bill">
+                    <!-- <tr>
+                        <td>Somsa</td>
+                        <td>Rs. 10</td>
+                        <td>1</td>
+                        <td>10*1 = 10</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </fieldset>
+        <h2>Total Amount : Rs. <span id="amount">0</span></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
